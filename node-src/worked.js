@@ -187,7 +187,7 @@ fetch(instUrl, {
 
                         })
                         .catch(error => console.error('GET DATA TAG error', error))
-                }, 1000 * 60 * 1.3)
+                }, 1000 * 60 * 1.4)
 
 
             })
