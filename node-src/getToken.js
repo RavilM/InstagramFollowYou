@@ -97,11 +97,9 @@ fetch(instUrl, {
         // console.log('Attention  RESULT  !!!! ', myCookies);
 
         var myFormData = new URLSearchParams();
-        myFormData.append('username', 'm.awwwx');
-        myFormData.append('password', 'revers15');
+        myFormData.append('username', login);
+        myFormData.append('password', password);
 
-        // myFormData.append('username', 'aerere');
-        // myFormData.append('password', 'avers 15');
         myFormData.append('queryParams', '{"source":"auth_switcher"}');
 
         fetch(`${instUrl}accounts/login/ajax/`, {

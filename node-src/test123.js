@@ -6,7 +6,7 @@ Instagram.getCsrfToken().then((csrf) =>
     Instagram.csrfToken = csrf;
 }).then(() =>
 {
-    return Instagram.auth('m.awwwx', 'revers15').then(sessionId =>
+    return Instagram.auth(login, password).then(sessionId =>
     {
         Instagram.sessionId = sessionId
 
@@ -82,8 +82,6 @@ Instagram.getCsrfToken().then((csrf) =>
 //     })
 //     .then(token => {
 //         var myFormData = new URLSearchParams();
-//         myFormData.append('username', 'm.awwwx');
-//         myFormData.append('password', 'revers15');
 //         myFormData.append('queryParams', '{"source":"auth_switcher"}');
 //
 //         fetch(`${instUrl}accounts/login/ajax/`, {
@@ -283,8 +281,6 @@ Instagram.getCsrfToken().then((csrf) =>
 //     .then(token => {
 //         // console.log('token', token)
 //         var myFormData = new URLSearchParams();
-//         myFormData.append('username', 'm.awwwx');
-//         myFormData.append('password', 'revers15');
 //         myFormData.append('queryParams', '{"source":"auth_switcher"}');
 // // console.log(`111111111 mid=${myCookies.mid}`);
 //         fetch(`${instUrl}accounts/login/ajax/`, {
