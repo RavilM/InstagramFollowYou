@@ -97,8 +97,8 @@ fetch(instUrl, {
         // console.log('Attention  RESULT  !!!! ', myCookies);
 
         var myFormData = new URLSearchParams();
-        myFormData.append('username', login);
-        myFormData.append('password', password);
+        myFormData.append('username', 'login');
+        myFormData.append('password', 'password');
 
         myFormData.append('queryParams', '{"source":"auth_switcher"}');
 
@@ -132,7 +132,7 @@ fetch(instUrl, {
                 console.log('Result AUTH', text);
 
 
-                fetch(`${instUrl}m.awwwx/`, {
+                fetch(`${instUrl}login/`, {
                     method: 'GET',
                     headers: {
                         'accept': '*/*',

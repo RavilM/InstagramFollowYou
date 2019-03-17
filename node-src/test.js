@@ -7,7 +7,7 @@ Instagram = new Instagram();
 Instagram.getCsrfToken().then((csrf) => {
     Instagram.csrfToken = csrf;
 }).then(() => {
-    return Instagram.auth(login, password).then(sessionId => {
+    return Instagram.auth('login', 'password').then(sessionId => {
         Instagram.sessionId = sessionId
 
         console.log('sessionId', sessionId);
